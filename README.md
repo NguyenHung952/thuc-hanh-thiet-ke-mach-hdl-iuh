@@ -1,58 +1,58 @@
-# Thực hành thiết kế mạch HDL
+# ⚡ Thực hành thiết kế mạch HDL
 
-Repository tổng hợp tài liệu, bài tập và project thực hành **thiết kế mạch số với HDL/Verilog**, Quartus II và kit FPGA DE2.
+> Kho học tập và thực hành **thiết kế mạch số bằng HDL/Verilog**, từ mạch tổ hợp đến FSM, triển khai trên FPGA DE2.
 
-## Cấu trúc
+## 🎯 Nội dung chính
+
+- Logic tổ hợp và các mạch cơ bản.
+- LED 7 đoạn, mạch đếm và bộ định thời.
+- Bộ cộng / mạch nhân / so sánh.
+- Máy trạng thái hữu hạn (FSM).
+- Project Verilog đóng gói theo từng bài.
+- Quartus II, USB Blaster và quy trình nạp FPGA.
+- Pin assignment và chương trình test board DE2.
+
+## 🗂️ Cấu trúc
 
 ```text
 thuc_hanh_thiet_ke_mach_hdl/
-├── tai-lieu/
-│   ├── Bai 1_LT cong tac,nut nhan,led_sv.pdf
-│   ├── Bai 2_Mach to hop_sv.pdf
-│   ├── Bai 3_Mach giai ma led 7SEG_sv1.pdf
-│   ├── Bai 4 - Mach Dem_sv.pdf
-│   ├── Bai 5 - Clock va bo dinh thoi_sv.pdf
-│   ├── bai 6_mach cong_nhan nhi phan_sv.pdf
-│   └── Bai 7-may trang thai (FSM)_sv.pdf
-├── bai-tap/
-│   ├── baitapbcd.zip
-│   ├── baitapclock.zip
-│   ├── baitapfsm.zip
-│   ├── baitapled.zip
-│   ├── baitapmachdem.zip
-│   ├── baitapmachnhan.zip
-│   ├── baitapmachsosanh.zip
-│   ├── baitaptuan11.zip
-│   └── cuoiky.zip
-├── huong-dan/
-│   ├── HUONG DAN QUATUS 13.wmv
-│   ├── Huong dan cai dat USB Blaster_win11.wmv
-│   ├── duong dan cai usb blaster cho win 10.wmv
-│   ├── huong dan nap code verilog.wmv
-│   └── link quatus13.docx
-├── phan-cung/
-│   ├── DE2_pin_assignments.csv
-│   ├── test_board.txt
-│   └── test_board.v
+├── tai-lieu/        # Tài liệu bài học
+├── bai-tap/         # Project/bài tập Verilog
+├── huong-dan/       # Quartus, USB Blaster, nạp FPGA
+├── phan-cung/       # Pin assignment & test board
 └── README.md
 ```
 
-## Nội dung
+## 🛠️ Công cụ
 
-- Tài liệu về mạch tổ hợp, LED 7 đoạn, mạch đếm, clock/timer, bộ cộng và FSM.
-- Các project/bài tập Verilog đóng gói trong ZIP.
-- Hướng dẫn Quartus II, USB Blaster và nạp code FPGA.
-- File pin assignment và mã kiểm thử board DE2.
+`Verilog HDL` · `Intel Quartus II` · `ModelSim` · `FPGA DE2`
 
-## Công nghệ
+## 🚀 Quy trình học
 
-- Verilog HDL
-- Intel Quartus II
-- FPGA DE2
-- ModelSim
+```text
+Tài liệu
+   ↓
+Mạch & bảng trạng thái
+   ↓
+Verilog HDL
+   ↓
+Simulation
+   ↓
+Quartus / Synthesis
+   ↓
+Nạp FPGA DE2
+   ↓
+Kiểm thử phần cứng
+```
 
-## Mục đích
+## 📚 Dành cho
 
-Phục vụ học tập, thực hành thiết kế mạch số và lưu trữ các project HDL/FPGA.
+Sinh viên học **thiết kế mạch số, HDL, FPGA và hệ thống số**, đặc biệt khi cần kết hợp mô phỏng với kiểm thử trên kit.
 
-> Toàn bộ file gốc được giữ nguyên nội dung; chỉ sắp xếp lại đường dẫn và chuẩn hóa README.
+## 📌 Nguyên tắc repository
+
+Các tài liệu, project và file phần cứng hiện có được giữ nguyên nội dung. README chỉ được tổ chức lại để repository dễ đọc và tra cứu hơn.
+
+---
+
+**Nguyễn Ngọc Hùng · IUH**
