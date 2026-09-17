@@ -1,58 +1,162 @@
-# ⚡ Thực hành thiết kế mạch HDL
+# ⚡ Thực hành Thiết kế Mạch HDL – IUH
 
-> Kho học tập và thực hành **thiết kế mạch số bằng HDL/Verilog**, từ mạch tổ hợp đến FSM, triển khai trên FPGA DE2.
+Kho học tập và thực hành môn **Thiết kế Vi mạch số với HDL**, tập trung vào **Verilog HDL, thiết kế mạch số và FPGA DE2-115**.
 
-## 🎯 Nội dung chính
+Repository được tổ chức theo từng nhóm nội dung, giúp dễ tìm tài liệu, làm bài thực hành và tra cứu trong quá trình học.
 
-- Logic tổ hợp và các mạch cơ bản.
-- LED 7 đoạn, mạch đếm và bộ định thời.
-- Bộ cộng / mạch nhân / so sánh.
-- Máy trạng thái hữu hạn (FSM).
-- Project Verilog đóng gói theo từng bài.
-- Quartus II, USB Blaster và quy trình nạp FPGA.
-- Pin assignment và chương trình test board DE2.
+## 🧭 Nội dung
 
-## 🗂️ Cấu trúc
+| Thư mục                 | Nội dung                                               |
+| ----------------------- | ------------------------------------------------------ |
+| `00_Thong_tin_mon_hoc`  | Thông tin và tài liệu liên quan đến môn học            |
+| `01_Bai_giang`          | Bài giảng theo chương                                  |
+| `02_Ly_thuyet`          | Tài liệu lý thuyết về thiết kế mạch số và HDL          |
+| `03_Thuc_hanh`          | LAB, bài tập, DE2-115, phần cứng và tài liệu thực hành |
+| `04_Tai_lieu_tham_khao` | Sách và tài liệu tham khảo                             |
+| `05_Huong_dan`          | Quartus II, USB Blaster và hướng dẫn nạp code          |
+| `06_File_goc`           | Các file nguồn và tài liệu gốc                         |
+
+## 📂 Cấu trúc
 
 ```text
-thuc_hanh_thiet_ke_mach_hdl/
-├── tai-lieu/        # Tài liệu bài học
-├── bai-tap/         # Project/bài tập Verilog
-├── huong-dan/       # Quartus, USB Blaster, nạp FPGA
-├── phan-cung/       # Pin assignment & test board
+thuc-hanh-thiet-ke-mach-hdl-iuh/
+│
+├── 00_Thong_tin_mon_hoc/
+│
+├── 01_Bai_giang/
+│
+├── 02_Ly_thuyet/
+│
+├── 03_Thuc_hanh/
+│   ├── 01_DE2-115/
+│   ├── 02_LAB/
+│   ├── 03_TaiLieu/
+│   ├── 04_Bai_tap/
+│   ├── 05_Phan_cung/
+│   ├── 06_Tai_lieu_bai_tap/
+│   └── 07_Driver_USB_COM/
+│
+├── 04_Tai_lieu_tham_khao/
+│
+├── 05_Huong_dan/
+│   ├── 01_Quartus/
+│   ├── 02_USB_Blaster/
+│   └── 03_Nap_code/
+│
+├── 06_File_goc/
+│
 └── README.md
 ```
 
-## 🛠️ Công cụ
+## 🧩 Nội dung thực hành
 
-`Verilog HDL` · `Intel Quartus II` · `ModelSim` · `FPGA DE2`
+Repository bao gồm các nội dung:
 
-## 🚀 Quy trình học
+* Logic tổ hợp và mạch số cơ bản.
+* Công tắc, nút nhấn và LED.
+* LED 7 đoạn.
+* Mạch đếm và bộ định thời.
+* Bộ cộng, mạch nhân và mạch so sánh.
+* Máy trạng thái hữu hạn (FSM).
+* GPIO và LCD.
+* UART / RS232.
+* SRAM / SDRAM.
+* SignalTap.
+* DMA.
+* Nios II và Avalon/Qsys.
+* Pin assignment và kiểm thử trên kit DE2-115.
+
+## 🛠️ Công cụ & phần cứng
 
 ```text
-Tài liệu
-   ↓
-Mạch & bảng trạng thái
-   ↓
-Verilog HDL
-   ↓
-Simulation
-   ↓
-Quartus / Synthesis
-   ↓
-Nạp FPGA DE2
-   ↓
+HDL             : Verilog HDL
+FPGA Board      : DE2-115
+Development     : Intel Quartus II
+Programming     : USB Blaster
+Signal Analysis : SignalTap
+```
+
+## 🔄 Quy trình học tập
+
+```text
+Bài giảng / Lý thuyết
+          ↓
+Phân tích yêu cầu
+          ↓
+Thiết kế mạch
+          ↓
+Viết Verilog HDL
+          ↓
+Mô phỏng / kiểm tra
+          ↓
+Quartus II
+          ↓
+Pin Assignment
+          ↓
+Nạp FPGA DE2-115
+          ↓
 Kiểm thử phần cứng
 ```
 
-## 📚 Dành cho
+## 🚀 Bắt đầu
 
-Sinh viên học **thiết kế mạch số, HDL, FPGA và hệ thống số**, đặc biệt khi cần kết hợp mô phỏng với kiểm thử trên kit.
+### Học lý thuyết
 
-## 📌 Nguyên tắc repository
+```text
+01_Bai_giang/
+02_Ly_thuyet/
+```
 
-Các tài liệu, project và file phần cứng hiện có được giữ nguyên nội dung. README chỉ được tổ chức lại để repository dễ đọc và tra cứu hơn.
+### Làm bài thực hành
+
+```text
+03_Thuc_hanh/02_LAB/
+03_Thuc_hanh/04_Bai_tap/
+03_Thuc_hanh/06_Tai_lieu_bai_tap/
+```
+
+### Chuẩn bị phần cứng
+
+```text
+03_Thuc_hanh/01_DE2-115/
+03_Thuc_hanh/05_Phan_cung/
+03_Thuc_hanh/07_Driver_USB_COM/
+```
+
+### Cài đặt và nạp chương trình
+
+```text
+05_Huong_dan/
+```
+
+## 📌 Lưu ý
+
+Repository giữ lại các tài liệu phục vụ học tập và thực hành, bao gồm PDF, ZIP, RAR, WMV, DOCX và các file cấu hình phần cứng.
+
+Một số file có kích thước lớn. Có thể tải riêng từng file hoặc thư mục cần thiết thay vì clone toàn bộ repository.
+
+Tên file và nội dung tài liệu được giữ gần với nguồn ban đầu để thuận tiện đối chiếu.
+
+## 🎓 Mục tiêu
+
+```text
+Học lý thuyết
+     ↓
+Làm bài tập
+     ↓
+Thiết kế Verilog
+     ↓
+Mô phỏng
+     ↓
+Thực hành FPGA
+     ↓
+Kiểm thử phần cứng
+```
+
+## 👤 Tác giả
+
+**Nguyễn Ngọc Hùng · IUH**
 
 ---
 
-**Nguyễn Ngọc Hùng · IUH**
+> Digital Design · HDL · Verilog · FPGA · DE2-115
